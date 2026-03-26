@@ -104,8 +104,8 @@ if uploaded_file:
 
     th = st.session_state.threshold
     band_data = pd.DataFrame([
-        {"start": 0, "end": th, "mid": th/2, "color": "white", "label": "← ここまで黒"}, # ラベルを復元
-        {"start": th, "end": 255, "mid": (th+255)/2, "color": "black", "label": "ここから白 →"} # ラベルを復元
+        {"start": 0, "end": th, "mid": th/2, "color": "black", "label" : "← ここまで黒"}, # ラベルを復元
+        {"start": th, "end": 255, "mid": (th+255)/2,"color": "white", "label": "ここから白 →"} # ラベルを復元
     ])
 
     band_rect = alt.Chart(band_data).mark_rect(stroke="black", strokeWidth=1).encode(
