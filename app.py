@@ -130,7 +130,7 @@ if img_bytes is not None:
 
     # しきい値の初期値
     if "threshold" not in st.session_state:
-        st.session_state.threshold = 127
+        st.session_state.threshold = 250
 
     # 2. ヒストグラム
     click_selection = alt.selection_point(
